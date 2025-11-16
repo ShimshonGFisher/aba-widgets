@@ -16,6 +16,7 @@ A beautiful, customizable chat widget for ABA therapy companies that captures le
 
 - Parent's name
 - Phone number
+- Age of child
 - Email address
 - Insurance provider
 - Child diagnosis status (yes/no)
