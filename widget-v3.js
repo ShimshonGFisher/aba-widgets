@@ -3,7 +3,7 @@
 
   // Configuration - customize per client
   const CONFIG = {
-    webhookUrl: 'YOUR_N8N_WEBHOOK_URL', // Replace with actual n8n webhook
+    webhookUrl: 'https://kaielran.app.n8n.cloud/webhook/aba-chat-test', // Replace with actual n8n webhook
     companyName: 'Cross River ABA', // Client's company name
     primaryColor: null, // Set to null for auto-detect, or specify like '#E67E22'
     agentName: 'Sarah', // Bot's name
