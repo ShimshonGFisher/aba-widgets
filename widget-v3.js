@@ -807,14 +807,17 @@
         userLocation: state.userLocation,
         timestamp: Date.now()
       };
-
-      const response = await fetch(CONFIG.webhookUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload)
-      });
+  const response = await fetch(webhookUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      conversationId: conversationId,
+      message: userMessage,
+      messages: conversationHistory,  // ← This line is critical
+      collectedData: collectedData,
+      userLocation: userLocation
+    })
+  });
 
       const data = await response.json();
 
