@@ -101,6 +101,17 @@
     }
   }
 
+  function getTrafficSource() {
+  const urlParams = new URLSearchParams(window.location.search);
+  return {
+    source: urlParams.get('utm_source') || 'direct',
+    medium: urlParams.get('utm_medium') || 'none',
+    campaign: urlParams.get('utm_campaign') || 'none',
+    referrer: document.referrer || 'direct',
+    landingPage: window.location.href
+  };
+}
+
   // Inject styles
   function injectStyles() {
     const styles = `
@@ -805,6 +816,7 @@
         messages: state.messages,
         collectedData: state.collectedData,
         userLocation: state.userLocation,
+        trafficSource: getTrafficSource(),  
         timestamp: Date.now()
       };
 
