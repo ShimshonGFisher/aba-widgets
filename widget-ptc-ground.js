@@ -3,7 +3,7 @@
 
   // Configuration - PTC Ground Luxury Transport
   const CONFIG = {
-    webhookUrl: 'https://shimshongf.app.n8n.cloud/webhook-test/74edd3bf-5d90-4963-ae24-3bb619a385f8', // PTC Ground n8n webhook
+    webhookUrl: 'https://shimshongf.app.n8n.cloud/webhook/74edd3bf-5d90-4963-ae24-3bb619a385f8', // PTC Ground n8n webhook
     companyName: 'PTC Ground', 
     primaryColor: '#1a1a1a', // Sophisticated dark - can be changed to match their brand
     agentName: 'Sarah', // Change if they prefer different name
