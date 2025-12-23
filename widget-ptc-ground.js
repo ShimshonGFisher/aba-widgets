@@ -832,7 +832,7 @@
     try {
       // Add timeout to fetch request (10 seconds)
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 10000);
+      const timeoutId = setTimeout(() => controller.abort(), 15000);
 
       const payload = {
         conversationId: state.conversationId,
